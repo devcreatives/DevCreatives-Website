@@ -1,0 +1,18 @@
+
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding:0px;
+    align-items: inherit;
+
+}
+
+li{
+    padding :15px;
+    margin:auto;
+    
+}

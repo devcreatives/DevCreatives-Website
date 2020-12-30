@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Header from './Header.js'
+import {Container} from '@material-ui/core'
+import useStyles from './styles'
+import {BrowserRouter as Router,Route} from 'react-router-dom'
+
+import ServiceComponent from './components/service'
+import HomeComponent from './components/home'
+import AboutComponent from './components/about'
+import CareersComponent from './components/careers'
+import ClientsComponent from './components/clients'
+import NewsComponent from './components/news'
+import ContactComponent from './components/contact'
+
 
 function App() {
+const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container className={classes.root} maxWidth="md">
+        {/* Header  */}
+        <Header />
+        <Route path="/home"  exact component = {HomeComponent} />
+        <Route path="/about" component = {AboutComponent} />
+        <Route path="/careers" component = {CareersComponent} />
+        <Route path="/clients" component = {ClientsComponent} />
+        <Route path="/news" component = {NewsComponent} />
+        
+        <Route path="/services" component = {ServiceComponent} />
+      </Container>
+      </Router>
   );
 }
 
