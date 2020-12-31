@@ -1,37 +1,38 @@
 import React from 'react'
 import './header.css'
-import {AppBar,Toolbar} from '@material-ui/core'
+import {AppBar,Toolbar,Button, Typography} from '@material-ui/core'
 import {Link} from 'react-router-dom'
 import useStyles from './styles'
+import {Nav,Navbar} from 'react-bootstrap'
 
 
 function Header() {
 const classes = useStyles();
 
     return (
-        <div className="header">
-        
-           <AppBar className={classes.header}  color="default"  position="static">
-           <Toolbar>
-           
-           <ul>
-           
-           <li><Link to='/home'>Home </Link></li> 
-            <li><Link to='/about'>About us </Link></li> 
-            <li><Link to='/services'>Services</Link></li> 
-            <li><Link to='/careers'>Careers</Link></li> 
-            <li><Link to='/support'>Support</Link></li> 
-            <li><Link to='/partners'>Partners</Link></li> 
-            <li><Link to='/clients'>Clients</Link></li> 
-            <li><Link to='/news'>News</Link></li> 
-            <li><Link to='/contact'>Contact us</Link></li> 
 
-            </ul>
-        
-            </Toolbar>
-           </AppBar>
-          
-           </div>
+        <Navbar className={classes.header}  expand="md">
+            <Navbar.Brand className={classes.brand} href="/home"  >DevCreatives++</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                        <li className="nav-item"><Link to='/home'>Home </Link></li> 
+                        <li className="nav-item"><Link to='/about'>About us </Link></li> 
+                        <li className="nav-item"><Link to='/services'>Services</Link></li> 
+                        <li className="nav-item"><Link to='/careers'>Careers</Link></li> 
+                        <li className="nav-item"><Link to='/support'>Support</Link></li> 
+                        <li className="nav-item"><Link to='/partners'>Partners</Link></li> 
+                        <li className="nav-item"><Link to='/clients'>Clients</Link></li> 
+                        <li className="nav-item"><Link to='/news'>News</Link></li> 
+                        <li className="nav-item"><Link to='/contact'>Contact us</Link></li> 
+
+                    </ul>
+                </Nav>
+    
+             </Navbar.Collapse>
+        </Navbar>
     )
 }
 

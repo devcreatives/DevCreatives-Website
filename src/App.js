@@ -12,6 +12,9 @@ import CareersComponent from './components/careers'
 import ClientsComponent from './components/clients'
 import NewsComponent from './components/news'
 import ContactComponent from './components/contact'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
 
 
 function App() {
@@ -27,6 +30,7 @@ const classes = useStyles();
         <Route path="/careers" component = {CareersComponent} />
         <Route path="/clients" component = {ClientsComponent} />
         <Route path="/news" component = {NewsComponent} />
+        <Route path="/contact" component = {ContactComponent} />
         
         <Route path="/services" component = {ServiceComponent} />
       </Container>

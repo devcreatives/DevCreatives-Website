@@ -1,11 +1,11 @@
 import React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 function home() {
     return (
-        <div>
-            This is Home Page
-            
-        </div>
+        <Typography variant="" component= "div">
+             <Typography  >Santao</Typography>
+        </Typography>
     )
 }
 
