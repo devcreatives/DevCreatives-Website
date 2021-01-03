@@ -1,6 +1,5 @@
 import React from 'react'
 import './header.css'
-import {AppBar,Toolbar,Button, Typography} from '@material-ui/core'
 import {Link} from 'react-router-dom'
 import useStyles from './styles'
 import {Nav,Navbar} from 'react-bootstrap'
@@ -11,7 +10,7 @@ const classes = useStyles();
 
     return (
 
-        <Navbar className={classes.header}  expand="md">
+        <Navbar className={classes.header}  expand="lg">
             <Navbar.Brand className={classes.brand} href="/home"  >DevCreatives++</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

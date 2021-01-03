@@ -25,6 +25,7 @@ const classes = useStyles();
       <Container className={classes.root} maxWidth="md">
         {/* Header  */}
         <Header />
+        <Route path="/"  exact component = {HomeComponent} />
         <Route path="/home"  exact component = {HomeComponent} />
         <Route path="/about" component = {AboutComponent} />
         <Route path="/careers" component = {CareersComponent} />
