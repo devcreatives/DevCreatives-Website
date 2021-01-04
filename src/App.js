@@ -14,7 +14,7 @@ import NewsComponent from './components/news'
 import ContactComponent from './components/contact'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
+import Footer from './components/footer'
 
 
 function App() {
@@ -34,6 +34,7 @@ const classes = useStyles();
         <Route path="/contact" component = {ContactComponent} />
         
         <Route path="/services" component = {ServiceComponent} />
+        <Footer />
       </Container>
       </Router>
   );
