@@ -17,6 +17,11 @@ const UseStyles = makeStyles((theme) => ({
         
         
     },
+    footer:{
+        margin:theme.spacing(1),
+        padding:theme.spacing(2),
+
+    },
     appbar:{
         border:'0'
     },
@@ -84,6 +89,48 @@ const UseStyles = makeStyles((theme) => ({
     creditsItem:{
         display:'flex'
 
+    },
+    contactTitle:{
+        margin:theme.spacing(5),
+        border:10,
+    },
+    contactForm:{
+        border:'1px solid green',
+        borderRadius:20,
+        padding:theme.spacing(1),
+
+
+    },
+    contactDesc:{
+        margin:theme.spacing(1)
+    },
+    formTitle:{
+        margin:theme.spacing(5),
+        border:10,
+        fontSize:'40px',
+        color:'green'
+    },
+    inputFields:{
+        topMargin:theme.spacing(4),
+        margin:theme.spacing(2),
+        maxWidth:'300px',
+        
+
+    },
+    messageField:{
+        topMargin:theme.spacing(4),
+        margin:theme.spacing(2),
+        width:'90%'
+
+    },
+    contactFormSubmit:{
+        color:'green',
+        background:'',
+        
+        border:'2px solid green',
+        margin:theme.spacing(2),
+        width:'150px',
+        fontSize:'15px roboto'
     }
     
 }));
