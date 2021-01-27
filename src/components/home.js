@@ -57,10 +57,9 @@ const classes = useStyles();
                     <Grid  item lg={4} md={4} sm={12} xs={12}>
                         <Grid  container direction="row" justify="center" alignItems="stretch" spacing='3'>
                             <Grid  item lg={12} md={6} sm={6} xs={6} className={classes.webName}>
-                                <Typography variant="h3" >
-                                    Sa<strong className={classes.title}>nt</strong>ao </Typography>
-                                    <Typography variant="body2">SOFT CONSULTING</Typography>
-                               
+                            <Typography variant="h4" >Dev<strong className={classes.title}>Cr</strong>eatives++ </Typography>
+                            <Typography variant="body1">IT Solutions</Typography>                     
+            
                             </Grid>
                             <Grid  item lg={12} md={6} sm={8} xs={6}>
                                 <Card className={classes.imageDetails}>
