@@ -45,11 +45,11 @@ return(
 					</p>
 					<br class="clear"/>
 					<p class="center"><a href="#"><img height="107" align="center" border="0" width="165" src="https://material-ui.com/static/images/cards/contemplative-reptile.jpg" alt="image1"/></a></p>			
-					<p class="center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>                        
+					<p class="center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                        
 				</div>
                     </Paper>
                 </Grid>
-                <Grid item xs={5} container spacing={3}>
+                <Grid item xs={5} container>
                     <Paper className={classes.paper}>
                     <div class="floatright" id="sidearea">
 					  <p><strong>This is strong text</strong><br/>
